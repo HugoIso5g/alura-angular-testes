@@ -13,7 +13,6 @@ describe(UniqueIdService.name, () => {
       should generate id when called with prefix`, () => {
     const id = service.generateUniqueIdWithPrefix('app');
     expect(id.startsWith('app-')).toBeTrue();
-    
   });
 
   it(`#${UniqueIdService.prototype.generateUniqueIdWithPrefix.name}
